@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="titulo-jogo-container">
+        <h1>Jogo da Forca</h1>
+    </div>    
+    <div id="pnlConteudo" class="jogo-container">
+
+        <div class="hangman-image">
+            <img id="pbImagemForca" src="Imagens/forca_1.png">
+        </div>
+
+        <div id="pnlJogo" class="hangman-game">
+            
+            <div  id="pnlPalavra" class="grid-palavra">
+                <!-- Exemplo de palavra -->
+                <p>B</p>
+                <p>A</p>
+                <p>N</p>
+                <p>A</p>
+                <p>N</p>
+                <p>A</p>  
+            </div>
+    
+            <div id="pnlTeclado" class="teclado">
+                <div class="keyboard">
+                    <button class="key">A</button>
+                    <button class="key">B</button>
+                    <button class="key">C</button>
+                    <button class="key">D</button>
+                    <button class="key">E</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                    <button class="key">H</button>
+                    <button class="key">I</button>
+                    <button class="key">J</button>
+                </div>
+                
+                <div class="keyboard">
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                    <button class="key">M</button>
+                    <button class="key">N</button>
+                    <button class="key">O</button>
+                    <button class="key">P</button>
+                    <button class="key">Q</button>
+                    <button class="key">R</button>
+                    <button class="key">S</button>
+                    <button class="key">T</button>
+                </div>
+                
+                <div class="keyboard">        
+                    <button class="key">U</button>
+                    <button class="key">V</button>
+                    <button class="key">W</button>
+                    <button class="key">X</button>
+                    <button class="key">Y</button>
+                    <button class="key">Z</button>    
+                    <button id="btnReiniciar" class="reiniciar">REINICIAR JOGO</button>
+                </div>
+            </div>
+    
+            <div class="mensagem">                
+                <p id="lblDica" class="contador-letras">0 letras</p>
+                
+                <p id="lblMensagemFinal" class="notificacao"></p> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

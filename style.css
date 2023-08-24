@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fef08a;
+}
+
+.jogo-container {
+    display: flex;
+}
+
+.titulo-jogo-container {
+    padding: 16px;
+    text-align: center;
+}
+
+.hangman-image {    
+    padding: 32px;
+    padding-bottom: 0;
+    justify-content: left;
+}
+
+.hangman-game {    
+    padding: 32px;
+    padding-bottom: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.palavra-display {
+    padding: 50px;
+    font-size: 32px;   
+}
+
+.txt-letra-input {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #f7deaf;
+}
+
+.key {
+    margin: 6px;
+    width: 32px; 
+    height: 32px; 
+    margin-bottom: 0px;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+.keyboard {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-align: center;
+    align-self: center;
+}
+
+.key.disable {
+    cursor: not-allowed;
+    background-color: #eeddbd;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+    background-color: #b96730;
+}
+
+button:hover {
+    background-color: #ce8d63;
+}
+
+.teclado {
+    margin: 20px;
+}
+
+.grid-palavra {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    place-items: center;
+  
+    gap: 5px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 80px;
+}
+
+.grid-palavra > p {
+    padding: 8px 15px;
+  
+    border: 2px solid #f09e3a;
+    border-radius: 10px;
+  
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.btnAdivinhar {        
+    margin: 6px;
+    border-radius: 6px;
+    padding: 7.5px 45px 5.5px 45px;
+}
+
+.mensagem {
+    margin: 40px;
+    margin-top: 10px;
+}
+
+.reiniciar {    
+    margin: 6px;
+    border-radius: 6px;
+    padding: 7.5px 24px 5.5px 25px;
+}
